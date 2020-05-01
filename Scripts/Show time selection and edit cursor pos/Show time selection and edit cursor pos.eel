@@ -1,0 +1,55 @@
+// Time selection display (EEL script by spk77 21.7.2014)
+// Use mouse wheel to increase/decrease font size
+
+
+font_size = 16;
+font_name = "Verdana";
+
+function adjust_font_size(mouse_wheel_val)
+(
+  mouse_wheel_val > 0 ? (
+    font_size < 20 ? (
+      font_size += 2;
+    );
+  );
+  
+  mouse_wheel_val < 0 ? (
+    (font_size > 12 ) ? (
+      font_size -= 2;
+    );
+  );
+  gfx_setfont(1, font_name, font_size);
+  mouse_wheel = 0;
+);
+
+function init(window_w, window_h)
+(
+  gfx_init("Time selection display", window_w, window_h);
+  gfx_setfont(1, font_name, font_size);
+);
+
+function run() local(time_range, time_sel_start, time_sel_end)
+(
+  gfx_x = gfx_y = 10;
+  GetSet_LoopTimeRange(0, 0, time_sel_start, time_sel_end, 0);
+  time_range = time_sel_end - time_sel_start;
+  gfx_a = 0.5;
+  gfx_printf("Time selection:  ");
+  gfx_a = 1;
+  gfx_printf("%0.3f", time_range);
+  gfx_x = 10;
+  gfx_y += 2 * gfx_texth;
+  gfx_a = 0.5;
+  gfx_printf("Edit cursor pos: ");
+  gfx_a = 1;
+  gfx_printf("%0.3f", GetCursorPosition());
+
+  mouse_wheel != 0 ? adjust_font_size(mouse_wheel);
+
+  gfx_update();
+  gfx_getchar() >= 0 ? defer("run();");
+);
+
+// init(window_w, window_h);
+init(190, 80);
+run();

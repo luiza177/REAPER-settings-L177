@@ -1,0 +1,21 @@
+; Replace within the drawTCP macro:
+
+
+; **MODIFIED - using trackidx to supply the image for the the big colour bar hack**
+	; set tcp.trackidx                 			+ + [0 0 this_tcp_indent] [folder_sec 0 0 0 0 0 0 1] * scale [0 0 18 100]
+	set tcp.trackidx                 			+ + [this_tcp_indent 0 0] [folder_sec 0 0 0 0 0 0 1] * scale [0 0 18 100]
+	  set tcp.trackidx 							?supercollapsed{0} + tcp.trackidx * scale [0 0 0 40]
+	  set tcp_idx_margin						- / h 2 * scale 18 
+	  ; set tcp.trackidx.margin        			+ [this_tcp_indent] + [0 tcp_idx_margin 0 tcp_idx_margin 0.5] folderstate<0 * scale [0 -6 0 6] folderstate==1 * scale [0 16] 0
+	  set tcp.trackidx.margin        			+ [0 tcp_idx_margin 0 tcp_idx_margin 0.5] folderstate<0 * scale [0 -6 0 6] folderstate==1 * scale [0 16] 0
+; **END of mod**
+
+
+
+
+; Replace the tcp 'front' line
+
+; **MODIFIED - front everything over tcp.trackidx for the big colour bar hack**
+; front                          				tcp.recarm tcp.label tcp.volume tcp.solo tcp.mute tcp.phase tcp.width tcp.foldercomp tcp.folder
+front										tcp.recarm tcp.label tcp.volume tcp.volume.label tcp.pan.label tcp.width.label tcp.solo tcp.mute tcp.phase tcp.pan tcp.width tcp.recmode tcp.foldercomp tcp.folder tcp.meter tcp.io tcp.fx tcp.fxbyp tcp.env tcp.fxin tcp.recinput
+; **END of mod**

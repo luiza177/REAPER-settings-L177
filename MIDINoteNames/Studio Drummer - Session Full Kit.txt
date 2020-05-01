@@ -1,0 +1,58 @@
+# MIDI note/CC name map
+80 Hihat open full
+79 Hihat open Loose
+78 Hihat open 3/4
+77 Hihat open 1/2
+76 Hihat open 1/4
+75 Tom 1 Rim only
+74 Tom 2 Rim only
+73 Tom 3 Rim Only
+72 Tom 4 Rim only
+71 Tom 1 Rimshot
+70 Hihat pedal open
+69 Tom 2 Rimshot
+68 Hihat Closed Shank
+67 Tom 3 Rimshot
+66 Hihat Tip Tight
+65 Tom 4 Rimshot
+64 Snare Wires off
+63 Snare Roll
+62 Snare Flam
+61 Snare Rim Only
+60 Kick Open
+59 Splash Edge
+58 China Tip
+57 China Edge
+56 Crash 2 Bell
+55 Crash 2 Edge
+54 Crash 2 Tip
+53 Ridge Bell
+52 Ride Edge
+51 Ride Tip
+50 Crash 1 Bell
+49 Crash 1 Edge
+48 Crash 1 Tip
+47 Tom 1 Center
+46 Hihat Open Control
+45 Tom 2 Center
+44 Hihat Closed Pedal
+43 Tom 3 Center
+42 Hihat Closed Tip
+41 Tom 4 Center
+40 Snare Halfway
+39 Snare Rimshot
+38 Snare Center
+37 Snare Sidestick
+36 Kick Dampened
+35 Sticks hit
+34 Claps multi
+33 Claps solo
+32 Tambourine Shake
+31 Tambourine Tap
+30 Woodblock 
+29 Woodblock high
+28 Splash Choke
+27 China Choke
+26 Crash 2 CHoke
+25 Ride Choke
+24 Crash 1 Choke

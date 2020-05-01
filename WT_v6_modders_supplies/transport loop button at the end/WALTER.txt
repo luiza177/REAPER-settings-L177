@@ -1,0 +1,10 @@
+; replace into section "draw content in sec_buttons"
+
+	;***MODIFIED to move repeat button to the end***
+	; set trans.repeat             	+ + [trans.play sec_buttons] [size_play{2}] [size_repeat size_repeat size_repeat size_repeat]
+	; set trans.stop               	+ + [trans.repeat sec_buttons] [size_repeat{2}] [size_stop size_stop size_stop size_stop]
+	; set trans.pause              	+ + [trans.stop sec_buttons] [size_stop{2}] [size_pause size_pause size_pause size_pause]
+	set trans.stop               	+ + [trans.play sec_buttons] [size_play{2}] [size_stop size_stop size_stop size_stop]
+	set trans.pause              	+ + [trans.stop sec_buttons] [size_stop{2}] [size_pause size_pause size_pause size_pause]
+	set trans.repeat             	+ + [trans.pause sec_buttons] [size_pause{2}] [size_repeat size_repeat size_repeat size_repeat]
+	***END MODIFICATION***

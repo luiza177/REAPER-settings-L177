@@ -1,0 +1,1 @@
+This is a hack. It adds a big bit of bitmap to the left and right of the track index area, I have set the lengths of them to be very large, but if you go nuts with your track panel width or folder depth, the illusion will break down.

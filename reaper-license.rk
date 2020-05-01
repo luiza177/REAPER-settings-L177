@@ -1,0 +1,30 @@
+This is a temporary license key valid through the end of June 2020, offered to those working remotely and/or 
+social distancing who want to use REAPER from home.
+
+REAPER can import your license key automatically if you copy the following text to your clipboard:
+
+--- cut ---
+
+Name: Temporary License
+Email: takecare@everybody
+Version: 5 (valid through 6.x)
+Type: Commercial
+Expires on: Wed Jul  1 10:23:22 2020
+
+:REAPER LICENSE
+G5pNp9LZo4zl/hwZEbeZlRZ+qf4RXvqCstrqzYTTiF5+mN6iZTjm56RVlB/z
+GS8JEJ2slUM9Vpc5JoyFmHgIY6eC2XFYzhNfeMEbRXm/qNDaNE8wXzPUwfPn
+FN+1xtm64HrkkIPEHqqGUtxpBakVTLbRyPfvU3q8Ol0B0EkTFps6A+bGk57x
+8Rh7cFApreK42SD/w7f+nrgPOaboUj2LpQ/MaqB7gcyPVQp/phBbi2mbKh3b
+7OSN+sf4aaHxX1nts19y0/JFli+u7Nce6cULhoDDpXZi7Wo7WKUgZ6TSEkis
+91ZyQq+7Bqg8ZCKNu8MEL8IaqeBCptYLyMxNERUMmw==
+:END
+
+--- cut ---
+
+Select the above text, and then choose "Copy" from your browser's Edit menu, then run REAPER. 
+
+REAPER should then prompt you to import the license.
+
+Alternatively, you can save this file to disk and import it into REAPER via REAPER's about window, purchase tab.
+

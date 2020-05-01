@@ -1,0 +1,31 @@
+// Reabank file for Reaticulate - http://reaticulate.com/
+//
+// This file is a specially formatted Reabank file that is notated for use by Reaticulate.
+// Specification can be found here:
+//
+//      http://reaticulate.com/reabank.html
+//
+
+//! g="Orchestral Tools/Berlin Strings" n="Full Ensemble"
+//! chase=24
+Bank 71 1 Berlin Strings - Full Ensemble
+//! c=long i=note-whole o=@1/cc=24,0
+1 sustains
+//! c=long i=note-whole o=@2/cc=24,0
+2 sustains soft
+//! c=short i=spiccato o=@3/cc=24,0
+3 spiccato
+//! c=short-light i=pizz o=@4/cc=24,0
+4 pizzicato
+//! c=long i=note-whole o=@1/cc=24,127 spacer=1
+5 sustains (con sord)
+//! c=long i=note-whole o=@2/cc=24,127
+6 sustains soft (con sord)
+//! c=short i=spiccato o=@3/cc=24,127
+7 spiccato (con sord)
+//! c=short-light i=pizz o=@4/cc=24,127
+8 pizzicato (con sord)
+
+//--------------------------------------------------
+
+
